@@ -1,8 +1,8 @@
 //
-//  MixCollectionViewFlowLayout.h
+//  DemoViewController.h
 //  BaseCollectionView
 //
-//  Created by damai on 2019/5/7.
+//  Created by damai on 2019/5/6.
 //  Copyright © 2019 personal. All rights reserved.
 //
 
@@ -10,8 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MixCollectionViewFlowLayout : UICollectionViewFlowLayout
-
+@interface DemoViewController : UIViewController
 @end
 
 NS_ASSUME_NONNULL_END

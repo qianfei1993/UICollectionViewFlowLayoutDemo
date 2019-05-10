@@ -100,6 +100,10 @@
     // 内容宽度
     self.contentWidth = 0;
     
+    if (sections < 1) {
+        return;
+    }
+    
     // 垂直瀑布流----可分组
     // Item等宽不等高
     if (self.type == FlowLayoutTypeVerticalEqualWidth) {
@@ -343,9 +347,11 @@
         // 获取Header布局属性
         if (temHeaderHeight > 0) {
             UICollectionViewLayoutAttributes *headerAttribute = [super layoutAttributesForSupplementaryViewOfKind:UICollectionElementKindSectionHeader atIndexPath:[NSIndexPath indexPathForItem:0 inSection:section]];
-            headerAttribute.frame = CGRectMake(0, top, self.collectionView.frame.size.width, temHeaderHeight);
-            self.headerAttributes[section] = headerAttribute;
-            top = CGRectGetMaxY(headerAttribute.frame);
+            if (headerAttribute) {
+                headerAttribute.frame = CGRectMake(0, top, self.collectionView.frame.size.width, temHeaderHeight);
+                self.headerAttributes[section] = headerAttribute;
+                top = CGRectGetMaxY(headerAttribute.frame);
+            }
         }
         
         top += temSectionInset.top;
@@ -366,13 +372,17 @@
         }
         self.sectionItemAttributes[section] = itemAttributes;
         
+        // 获取最后一个item的布局属性
+        UICollectionViewLayoutAttributes *lastItemattribute = itemAttributes[itemCount-1];
+        
+        top = CGRectGetMaxY(lastItemattribute.frame) + temSectionInset.bottom;
         //获取每一组Footer高度
         CGFloat temFooterHeight = [self getSectionFooterHeight:section];
         
         // 获取Footer布局属性
         if (temFooterHeight > 0) {
             UICollectionViewLayoutAttributes *footerAttribute = [super layoutAttributesForSupplementaryViewOfKind:UICollectionElementKindSectionFooter atIndexPath:[NSIndexPath indexPathForItem:0 inSection:section]];
-            CGFloat footerY = [self.sectionColumnsHeights[section] floatValue];
+            CGFloat footerY = [self.sectionColumnsHeights[section] floatValue] + lastItemattribute.size.height + temSectionInset.bottom;
             footerAttribute.frame = CGRectMake(0, footerY, self.collectionView.frame.size.width, temFooterHeight);
             self.footerAttributes[section] = footerAttribute;
             top = CGRectGetMaxY(footerAttribute.frame);
@@ -456,7 +466,7 @@
     // 创建布局属性
     UICollectionViewLayoutAttributes *newAttributes = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
     // collectionView的宽度
-    CGFloat collectionViewWidth = self.collectionView.frame.size.width;
+    CGFloat collectionViewWidth = self.collectionView.frame.size.width - sectionInset.left - sectionInset.right;
     CGFloat itemWidth = oldAttributes.size.width;
     CGFloat itemHeight = oldAttributes.size.height;
     
@@ -553,7 +563,7 @@
 - (NSInteger)getSections{
     
     NSInteger sections = [self.collectionView numberOfSections];
-    return sections < 1 ? 1 : sections;
+    return sections;
 }
 
 // 获取每一组Header高度

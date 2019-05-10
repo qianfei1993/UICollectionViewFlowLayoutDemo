@@ -1,44 +1,26 @@
 //
-//  VerticalAligmentViewController.m
+//  HorizontalOrderViewController.m
 //  BaseCollectionView
 //
 //  Created by damai on 2019/5/6.
 //  Copyright © 2019 personal. All rights reserved.
 //
 
-#import "VerticalAligmentViewController.h"
+#import "HorizontalOrderViewController.h"
 #import "Header.h"
 #import "FirstCollectionViewCell.h"
-@interface VerticalAligmentViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
+@interface HorizontalOrderViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 @property (nonatomic, strong) BaseCollectionView *collectionView;
 @property (nonatomic, strong) NSMutableArray *dataArray; /** 数据源 */
-@property (nonatomic, assign) BOOL isSection; /** 是否分组 */
 @end
 
-@implementation VerticalAligmentViewController
+@implementation HorizontalOrderViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
-    [self setupRightBarButtonItem];
     [self setupWithCollectionView];
-}
-
-- (void)setupRightBarButtonItem{
-    
-    UIButton *rightBarButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 44, 44)];
-    [rightBarButton setTitle:@"添加分组" forState:UIControlStateNormal];
-    [rightBarButton setTitle:@"取消分组" forState:UIControlStateSelected];
-    [rightBarButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [rightBarButton addTarget:self action:@selector(rightBarButtonAction:) forControlEvents:UIControlEventTouchUpInside];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:rightBarButton];
-}
-
-- (void)rightBarButtonAction:(UIButton*)sender{
-    sender.selected = !sender.selected;
-    self.isSection = sender.selected;
-    [self.collectionView reloadData];
 }
 
 - (void)setupWithCollectionView{
@@ -51,13 +33,6 @@
     [self.collectionView registerNib:[UINib nibWithNibName:@"FirstCollectionViewCell" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:@"FirstCollectionViewCellID"];
 }
 
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
-    
-    if (self.isSection) {
-        return 2;
-    }
-    return 1;
-}
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     return self.dataArray.count;

@@ -1,21 +1,21 @@
 //
-//  VerticalTypeViewController.m
+//  VerticalEqualWidthViewController.m
 //  BaseCollectionView
 //
 //  Created by damai on 2019/5/5.
 //  Copyright © 2019 personal. All rights reserved.
 //
 
-#import "VerticalTypeViewController.h"
+#import "VerticalEqualWidthViewController.h"
 #import "Header.h"
 #import "SecondCollectionViewCell.h"
-@interface VerticalTypeViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,BaseCollectionViewFlowLayoutDelegate>
+@interface VerticalEqualWidthViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,BaseCollectionViewFlowLayoutDelegate>
 @property (nonatomic, strong) BaseCollectionView *collectionView;
 @property (nonatomic, strong) NSArray *dataArray; /** 数据源 */
-@property (nonatomic, assign) BOOL isSection; /** 是否分组 */
+@property (nonatomic, assign) NSInteger sectionNum; /** 分组 */
 @end
 
-@implementation VerticalTypeViewController
+@implementation VerticalEqualWidthViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -25,33 +25,41 @@
 }
 
 - (void)setupRightBarButtonItem{
-    
+    _sectionNum = 1;
     UIButton *rightBarButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 44, 44)];
-    [rightBarButton setTitle:@"添加分组" forState:UIControlStateNormal];
-    [rightBarButton setTitle:@"取消分组" forState:UIControlStateSelected];
+    [rightBarButton setTitle:@"增加分组" forState:UIControlStateNormal];
     [rightBarButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [rightBarButton addTarget:self action:@selector(rightBarButtonAction:) forControlEvents:UIControlEventTouchUpInside];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:rightBarButton];
+    
+    
+    UIButton *rightBarButton1 = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 44, 44)];
+    [rightBarButton1 setTitle:@"减少分组" forState:UIControlStateNormal];
+    [rightBarButton1 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [rightBarButton1 addTarget:self action:@selector(rightBarButton1Action:) forControlEvents:UIControlEventTouchUpInside];
+    
+    
+    UIBarButtonItem *item = [[UIBarButtonItem alloc]initWithCustomView:rightBarButton];
+    UIBarButtonItem *item1 = [[UIBarButtonItem alloc]initWithCustomView:rightBarButton1];
+    self.navigationItem.rightBarButtonItems = @[item,item1];
 }
 
 - (void)rightBarButtonAction:(UIButton*)sender{
-    sender.selected = !sender.selected;
-    self.isSection = sender.selected;
+    
+    _sectionNum++;
     [self.collectionView reloadData];
+}
+- (void)rightBarButton1Action:(UIButton*)sender{
+    if (_sectionNum > 1) {
+        _sectionNum--;
+        [self.collectionView reloadData];
+    }
 }
 
 - (void)setupWithCollectionView{
     
     BaseCollectionViewFlowLayout *flowLayout = [[BaseCollectionViewFlowLayout alloc]initWithFlowLayoutType:FlowLayoutTypeVerticalEqualWidth withColumnOrRowCount:3 withColumnSpacing:10 withRowSpacing:20 withEdgeInsets:UIEdgeInsetsMake(20, 15, 20, 15)];
-    //UIEdgeInsetsMake(20, 15, 20, 15)
     self.collectionView = [[BaseCollectionView alloc]initWithFrame:CGRectMake(0, kNavBarHeight, kScreenWidth, kScreenHeight-kNavBarHeight) collectionViewLayout:flowLayout];
     [self.view addSubview:self.collectionView];
-//    [self.collectionView addMJHeader:^{
-//        [weakSelf loadNewShops];
-//    }];
-//    [self.collectionView addMJFooter:^{
-//        [weakSelf loadNewShops];
-//    }];
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
     [self.collectionView registerNib:[UINib nibWithNibName:@"SecondCollectionViewCell" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:@"SecondCollectionViewCellID"];
@@ -61,10 +69,7 @@
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
     
-    if (self.isSection) {
-        return 2;
-    }
-    return 1;
+    return _sectionNum;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
@@ -86,10 +91,6 @@
     return cell;
     
 }
-
-//- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
-//    
-//}
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     NSDictionary *dict = self.dataArray[indexPath.item];

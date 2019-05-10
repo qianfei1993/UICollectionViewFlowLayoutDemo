@@ -44,7 +44,6 @@ typedef NS_ENUM(NSInteger, FlowLayoutType) {
  @param rowSpacing        行间距
  @param edgeInsets        外边距
 
- 
  @return BaseCollectionViewFlowLayout       布局对象
  */
 

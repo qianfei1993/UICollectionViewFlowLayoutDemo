@@ -1,20 +1,20 @@
 //
-//  HorizontalViewController.m
+//  HorizontalScrambledViewController.m
 //  BaseCollectionView
 //
 //  Created by damai on 2019/5/5.
 //  Copyright © 2019 personal. All rights reserved.
 //
 
-#import "HorizontalViewController.h"
+#import "HorizontalScrambledViewController.h"
 #import "Header.h"
 #import "SecondCollectionViewCell.h"
-@interface HorizontalViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
+@interface HorizontalScrambledViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 @property (nonatomic, strong) BaseCollectionView *collectionView;
 @property (nonatomic, strong) NSArray *dataArray; /** 数据源 */
 @end
 
-@implementation HorizontalViewController
+@implementation HorizontalScrambledViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

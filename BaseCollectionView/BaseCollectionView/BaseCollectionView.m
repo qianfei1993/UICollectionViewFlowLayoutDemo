@@ -33,7 +33,7 @@
 
 - (void)initWithConfig {
     
-    self.backgroundColor = [UIColor lightGrayColor];
+    self.backgroundColor = [UIColor colorWithRed:245/255.0 green:245/255.0 blue:245/255.0 alpha:1.0];
     self.delaysContentTouches = NO;
     self.canCancelContentTouches = YES;
     self.dataArray = [NSMutableArray array];

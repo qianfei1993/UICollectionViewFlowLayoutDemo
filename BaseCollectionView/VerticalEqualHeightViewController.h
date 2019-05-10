@@ -1,8 +1,8 @@
 //
-//  VerticalTypeViewController.h
+//  AlignmentViewController.h
 //  BaseCollectionView
 //
-//  Created by damai on 2019/5/5.
+//  Created by damai on 2019/5/6.
 //  Copyright © 2019 personal. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface VerticalTypeViewController : UIViewController
+@interface VerticalEqualHeightViewController : UIViewController
 
 @end
 

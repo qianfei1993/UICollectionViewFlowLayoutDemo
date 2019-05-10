@@ -1,5 +1,5 @@
 //
-//  HorizontalViewController.h
+//  HorizontalScrambledViewController.h
 //  BaseCollectionView
 //
 //  Created by damai on 2019/5/5.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HorizontalViewController : UIViewController
+@interface HorizontalScrambledViewController : UIViewController
 
 @end
 

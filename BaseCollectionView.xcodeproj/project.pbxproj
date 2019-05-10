@@ -10,13 +10,13 @@
 		B32C5C5222841BE5003C7C02 /* shop.plist in Resources */ = {isa = PBXBuildFile; fileRef = B32C5C5122841BE5003C7C02 /* shop.plist */; };
 		B34A76F4227EEBC4000608B8 /* Header.h in Sources */ = {isa = PBXBuildFile; fileRef = B34A76F2227EEB5E000608B8 /* Header.h */; };
 		B34A76F7227EEC51000608B8 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B34A76F6227EEC51000608B8 /* RootViewController.m */; };
-		B34A76FF227EEF70000608B8 /* VerticalTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B34A76FE227EEF70000608B8 /* VerticalTypeViewController.m */; };
+		B34A76FF227EEF70000608B8 /* VerticalEqualWidthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B34A76FE227EEF70000608B8 /* VerticalEqualWidthViewController.m */; };
 		B34A7703227EEF9D000608B8 /* NormalTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B34A7701227EEF9D000608B8 /* NormalTypeViewController.m */; };
 		B34A7704227EEF9D000608B8 /* NormalTypeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B34A7702227EEF9D000608B8 /* NormalTypeViewController.xib */; };
-		B34A7707227EF5F8000608B8 /* HorizontalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B34A7706227EF5F8000608B8 /* HorizontalViewController.m */; };
-		B366A072227FFAE000F4B673 /* HorizontalAlignmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B366A071227FFAE000F4B673 /* HorizontalAlignmentViewController.m */; };
-		B366A075228008DA00F4B673 /* VerticalAligmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B366A074228008DA00F4B673 /* VerticalAligmentViewController.m */; };
-		B366A07822803C5500F4B673 /* MixViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B366A07722803C5500F4B673 /* MixViewController.m */; };
+		B34A7707227EF5F8000608B8 /* HorizontalScrambledViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B34A7706227EF5F8000608B8 /* HorizontalScrambledViewController.m */; };
+		B366A072227FFAE000F4B673 /* VerticalEqualHeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B366A071227FFAE000F4B673 /* VerticalEqualHeightViewController.m */; };
+		B366A075228008DA00F4B673 /* HorizontalOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B366A074228008DA00F4B673 /* HorizontalOrderViewController.m */; };
+		B366A07822803C5500F4B673 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B366A07722803C5500F4B673 /* DemoViewController.m */; };
 		B366A07C22803EC300F4B673 /* CollectionReusableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B366A07A22803EC300F4B673 /* CollectionReusableHeaderView.m */; };
 		B366A07D22803EC400F4B673 /* CollectionReusableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B366A07B22803EC300F4B673 /* CollectionReusableHeaderView.xib */; };
 		B37706842276910700846C11 /* TagListViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B377067F2276910700846C11 /* TagListViewFlowLayout.m */; };
@@ -95,7 +95,6 @@
 		B3B83FF22272D9C900C90AAE /* BaseCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B83FF12272D9C900C90AAE /* BaseCollectionViewFlowLayout.m */; };
 		B3B83FF92272DA5000C90AAE /* FirstCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B83FF72272DA5000C90AAE /* FirstCollectionViewCell.m */; };
 		B3B83FFA2272DA5000C90AAE /* FirstCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3B83FF82272DA5000C90AAE /* FirstCollectionViewCell.xib */; };
-		B3DAD86222812B7300998F58 /* MixCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DAD86122812B7300998F58 /* MixCollectionViewFlowLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,19 +119,19 @@
 		B34A76F2227EEB5E000608B8 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		B34A76F5227EEC51000608B8 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		B34A76F6227EEC51000608B8 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		B34A76FD227EEF70000608B8 /* VerticalTypeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VerticalTypeViewController.h; sourceTree = "<group>"; };
-		B34A76FE227EEF70000608B8 /* VerticalTypeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VerticalTypeViewController.m; sourceTree = "<group>"; };
+		B34A76FD227EEF70000608B8 /* VerticalEqualWidthViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VerticalEqualWidthViewController.h; sourceTree = "<group>"; };
+		B34A76FE227EEF70000608B8 /* VerticalEqualWidthViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VerticalEqualWidthViewController.m; sourceTree = "<group>"; };
 		B34A7700227EEF9D000608B8 /* NormalTypeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NormalTypeViewController.h; sourceTree = "<group>"; };
 		B34A7701227EEF9D000608B8 /* NormalTypeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NormalTypeViewController.m; sourceTree = "<group>"; };
 		B34A7702227EEF9D000608B8 /* NormalTypeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NormalTypeViewController.xib; sourceTree = "<group>"; };
-		B34A7705227EF5F8000608B8 /* HorizontalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HorizontalViewController.h; sourceTree = "<group>"; };
-		B34A7706227EF5F8000608B8 /* HorizontalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HorizontalViewController.m; sourceTree = "<group>"; };
-		B366A070227FFAE000F4B673 /* HorizontalAlignmentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HorizontalAlignmentViewController.h; sourceTree = "<group>"; };
-		B366A071227FFAE000F4B673 /* HorizontalAlignmentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HorizontalAlignmentViewController.m; sourceTree = "<group>"; };
-		B366A073228008DA00F4B673 /* VerticalAligmentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VerticalAligmentViewController.h; sourceTree = "<group>"; };
-		B366A074228008DA00F4B673 /* VerticalAligmentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VerticalAligmentViewController.m; sourceTree = "<group>"; };
-		B366A07622803C5500F4B673 /* MixViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MixViewController.h; sourceTree = "<group>"; };
-		B366A07722803C5500F4B673 /* MixViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MixViewController.m; sourceTree = "<group>"; };
+		B34A7705227EF5F8000608B8 /* HorizontalScrambledViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HorizontalScrambledViewController.h; sourceTree = "<group>"; };
+		B34A7706227EF5F8000608B8 /* HorizontalScrambledViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HorizontalScrambledViewController.m; sourceTree = "<group>"; };
+		B366A070227FFAE000F4B673 /* VerticalEqualHeightViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VerticalEqualHeightViewController.h; sourceTree = "<group>"; };
+		B366A071227FFAE000F4B673 /* VerticalEqualHeightViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VerticalEqualHeightViewController.m; sourceTree = "<group>"; };
+		B366A073228008DA00F4B673 /* HorizontalOrderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HorizontalOrderViewController.h; sourceTree = "<group>"; };
+		B366A074228008DA00F4B673 /* HorizontalOrderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HorizontalOrderViewController.m; sourceTree = "<group>"; };
+		B366A07622803C5500F4B673 /* DemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		B366A07722803C5500F4B673 /* DemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
 		B366A07922803EC300F4B673 /* CollectionReusableHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionReusableHeaderView.h; sourceTree = "<group>"; };
 		B366A07A22803EC300F4B673 /* CollectionReusableHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionReusableHeaderView.m; sourceTree = "<group>"; };
 		B366A07B22803EC300F4B673 /* CollectionReusableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionReusableHeaderView.xib; sourceTree = "<group>"; };
@@ -286,8 +285,6 @@
 		B3B83FF62272DA5000C90AAE /* FirstCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstCollectionViewCell.h; sourceTree = "<group>"; };
 		B3B83FF72272DA5000C90AAE /* FirstCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstCollectionViewCell.m; sourceTree = "<group>"; };
 		B3B83FF82272DA5000C90AAE /* FirstCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstCollectionViewCell.xib; sourceTree = "<group>"; };
-		B3DAD86022812B7300998F58 /* MixCollectionViewFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MixCollectionViewFlowLayout.h; sourceTree = "<group>"; };
-		B3DAD86122812B7300998F58 /* MixCollectionViewFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MixCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -449,18 +446,16 @@
 				B34A7700227EEF9D000608B8 /* NormalTypeViewController.h */,
 				B34A7701227EEF9D000608B8 /* NormalTypeViewController.m */,
 				B34A7702227EEF9D000608B8 /* NormalTypeViewController.xib */,
-				B34A76FD227EEF70000608B8 /* VerticalTypeViewController.h */,
-				B34A76FE227EEF70000608B8 /* VerticalTypeViewController.m */,
-				B34A7705227EF5F8000608B8 /* HorizontalViewController.h */,
-				B34A7706227EF5F8000608B8 /* HorizontalViewController.m */,
-				B366A073228008DA00F4B673 /* VerticalAligmentViewController.h */,
-				B366A074228008DA00F4B673 /* VerticalAligmentViewController.m */,
-				B366A070227FFAE000F4B673 /* HorizontalAlignmentViewController.h */,
-				B366A071227FFAE000F4B673 /* HorizontalAlignmentViewController.m */,
-				B366A07622803C5500F4B673 /* MixViewController.h */,
-				B366A07722803C5500F4B673 /* MixViewController.m */,
-				B3DAD86022812B7300998F58 /* MixCollectionViewFlowLayout.h */,
-				B3DAD86122812B7300998F58 /* MixCollectionViewFlowLayout.m */,
+				B34A76FD227EEF70000608B8 /* VerticalEqualWidthViewController.h */,
+				B34A76FE227EEF70000608B8 /* VerticalEqualWidthViewController.m */,
+				B366A070227FFAE000F4B673 /* VerticalEqualHeightViewController.h */,
+				B366A071227FFAE000F4B673 /* VerticalEqualHeightViewController.m */,
+				B366A07622803C5500F4B673 /* DemoViewController.h */,
+				B366A07722803C5500F4B673 /* DemoViewController.m */,
+				B34A7705227EF5F8000608B8 /* HorizontalScrambledViewController.h */,
+				B34A7706227EF5F8000608B8 /* HorizontalScrambledViewController.m */,
+				B366A073228008DA00F4B673 /* HorizontalOrderViewController.h */,
+				B366A074228008DA00F4B673 /* HorizontalOrderViewController.m */,
 				B3B83FF62272DA5000C90AAE /* FirstCollectionViewCell.h */,
 				B3B83FF72272DA5000C90AAE /* FirstCollectionViewCell.m */,
 				B3B83FF82272DA5000C90AAE /* FirstCollectionViewCell.xib */,
@@ -802,15 +797,14 @@
 				B3B83FD92272D37C00C90AAE /* MJRefreshBackFooter.m in Sources */,
 				B3B83FC82272D37C00C90AAE /* MJChiBaoZiHeader.m in Sources */,
 				B3B83FD02272D37C00C90AAE /* MJRefreshBackNormalFooter.m in Sources */,
-				B3DAD86222812B7300998F58 /* MixCollectionViewFlowLayout.m in Sources */,
 				B3B83FCE2272D37C00C90AAE /* MJRefreshBackGifFooter.m in Sources */,
-				B366A07822803C5500F4B673 /* MixViewController.m in Sources */,
+				B366A07822803C5500F4B673 /* DemoViewController.m in Sources */,
 				B39AE78E2277DF8600CAB2FC /* SDImageCacheConfig.m in Sources */,
 				B3B83FCB2272D37C00C90AAE /* UIScrollView+MJExtension.m in Sources */,
-				B34A7707227EF5F8000608B8 /* HorizontalViewController.m in Sources */,
+				B34A7707227EF5F8000608B8 /* HorizontalScrambledViewController.m in Sources */,
 				B37706862276910700846C11 /* TagListView.m in Sources */,
 				B39AE7852277DF8600CAB2FC /* NSButton+WebCache.m in Sources */,
-				B366A075228008DA00F4B673 /* VerticalAligmentViewController.m in Sources */,
+				B366A075228008DA00F4B673 /* HorizontalOrderViewController.m in Sources */,
 				B3B83FD22272D37C00C90AAE /* MJRefreshAutoGifFooter.m in Sources */,
 				B39AE78A2277DF8600CAB2FC /* NSData+ImageContentType.m in Sources */,
 				B39AE7902277DF8600CAB2FC /* UIView+WebCache.m in Sources */,
@@ -821,8 +815,8 @@
 				B3B83FBE2272D37C00C90AAE /* LYEmptyBaseView.m in Sources */,
 				B3B83F522272D30B00C90AAE /* main.m in Sources */,
 				B34A7703227EEF9D000608B8 /* NormalTypeViewController.m in Sources */,
-				B366A072227FFAE000F4B673 /* HorizontalAlignmentViewController.m in Sources */,
-				B34A76FF227EEF70000608B8 /* VerticalTypeViewController.m in Sources */,
+				B366A072227FFAE000F4B673 /* VerticalEqualHeightViewController.m in Sources */,
+				B34A76FF227EEF70000608B8 /* VerticalEqualWidthViewController.m in Sources */,
 				B39AE7792277DF8600CAB2FC /* SDWebImageManager.m in Sources */,
 				B3B83FC32272D37C00C90AAE /* MJRefreshConst.m in Sources */,
 				B3B83FC02272D37C00C90AAE /* UIView+LYExtension.m in Sources */,

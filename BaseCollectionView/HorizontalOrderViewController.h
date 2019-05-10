@@ -1,5 +1,5 @@
 //
-//  AlignmentViewController.h
+//  HorizontalOrderViewController.h
 //  BaseCollectionView
 //
 //  Created by damai on 2019/5/6.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HorizontalAlignmentViewController : UIViewController
+@interface HorizontalOrderViewController : UIViewController
 
 @end
 

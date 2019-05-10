@@ -8,11 +8,11 @@
 
 #import "RootViewController.h"
 #import "NormalTypeViewController.h"
-#import "VerticalTypeViewController.h"
-#import "HorizontalViewController.h"
-#import "VerticalAligmentViewController.h"
-#import "HorizontalAlignmentViewController.h"
-#import "MixViewController.h"
+#import "VerticalEqualWidthViewController.h"
+#import "HorizontalScrambledViewController.h"
+#import "HorizontalOrderViewController.h"
+#import "VerticalEqualHeightViewController.h"
+#import "DemoViewController.h"
 @interface RootViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *dataArray; /** 数据源 */
@@ -25,19 +25,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initWithTableView];
-    
-    for (NSUInteger i = 0; i < 5; i++) {
-        
-        NSString *str = [NSString stringWithFormat:@"%ld",i];
-        self.testArr[i] = str;
-        [self.testArr1 addObject:@(i)];
-        NSLog(@"before %ld",i);
-    }
-    
-    for (NSUInteger i = 0; i < 5; i++) {
-        NSLog(@"last %ld",i);
-    }
-    NSLog(@"%@===%@",self.testArr,self.testArr1);
 }
 #pragma mark —————UITableView—————
 - (void)initWithTableView{
@@ -70,60 +57,55 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+
     
     if (indexPath.row == 0) {
-        
-        NSString *str = self.testArr[0];
-        str = @"5";
-        self.testArr[0] = str;
-//        self.testArr[0] = @(5);
-        NSLog(@"%@",self.testArr);
-        //
         // 普通样式
         [self.navigationController pushViewController:[NormalTypeViewController new] animated:YES];
     }
     
     if (indexPath.row == 1) {
-        // 垂直瀑布流
-        [self.navigationController pushViewController:[VerticalTypeViewController new] animated:YES];
+        // 垂直瀑布流--Item等宽不等高
+        [self.navigationController pushViewController:[VerticalEqualWidthViewController new] animated:YES];
     }
     
     if (indexPath.row == 2) {
-        // 水平瀑布流
-        [self.navigationController pushViewController:[HorizontalViewController new] animated:YES];
+        // 垂直瀑布流--Item等高不等宽
+        [self.navigationController pushViewController:[VerticalEqualHeightViewController new] animated:YES];
     }
     
     if (indexPath.row == 3) {
-        // 垂直顺序布局
-        [self.navigationController pushViewController:[VerticalAligmentViewController new] animated:YES];
+        // 水平瀑布流--补充最短行排列
+        [self.navigationController pushViewController:[HorizontalScrambledViewController new] animated:YES];
+        
     }
     
     if (indexPath.row == 4) {
-        // 水平顺序布局
-        [self.navigationController pushViewController:[HorizontalAlignmentViewController new] animated:YES];
+        // 水平瀑布流--顺序排列
+        [self.navigationController pushViewController:[HorizontalOrderViewController new] animated:YES];
     }
     
     if (indexPath.row == 5) {
-        // 混合布局
-        [self.navigationController pushViewController:[MixViewController new] animated:YES];
+        // 垂直瀑布流--Item等高不等宽
+        [self.navigationController pushViewController:[DemoViewController new] animated:YES];
     }
     
-    
 }
-
 
 - (NSMutableArray *)dataArray {
     if (!_dataArray) {
-        _dataArray = [NSMutableArray arrayWithObjects:@"普通样式",@"垂直瀑布流-纵向滑动",@"水平瀑布流-横向滑动",@"垂直顺序布局-横向滑动",@"水平顺序布局-纵向滑动",@"混合布局", nil];
+        _dataArray = [NSMutableArray arrayWithObjects:@"普通样式",@"垂直瀑布流--Item等宽不等高",@"垂直瀑布流--Item等高不等宽",@"水平瀑布流--补充最短行排列",@"水平瀑布流--顺序排列",@"垂直瀑布流--Item等高不等宽-仿数据加载", nil];
     }
     return _dataArray;
 }
+
 - (NSMutableArray *)testArr{
     if (!_testArr) {
         _testArr = [NSMutableArray array];
     }
     return _testArr;
 }
+
 - (NSMutableArray *)testArr1{
     if (!_testArr1) {
         _testArr1 = [NSMutableArray array];
