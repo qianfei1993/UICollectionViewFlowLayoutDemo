@@ -19,10 +19,6 @@
 		B366A07822803C5500F4B673 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B366A07722803C5500F4B673 /* DemoViewController.m */; };
 		B366A07C22803EC300F4B673 /* CollectionReusableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B366A07A22803EC300F4B673 /* CollectionReusableHeaderView.m */; };
 		B366A07D22803EC400F4B673 /* CollectionReusableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B366A07B22803EC300F4B673 /* CollectionReusableHeaderView.xib */; };
-		B37706842276910700846C11 /* TagListViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B377067F2276910700846C11 /* TagListViewFlowLayout.m */; };
-		B37706852276910700846C11 /* TagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B37706802276910700846C11 /* TagCell.m */; };
-		B37706862276910700846C11 /* TagListView.m in Sources */ = {isa = PBXBuildFile; fileRef = B37706812276910700846C11 /* TagListView.m */; };
-		B377068C2276960200846C11 /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = B377068B2276960200846C11 /* NSString+Size.m */; };
 		B39AE7412277DC6900CAB2FC /* SecondCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B39AE73F2277DC6900CAB2FC /* SecondCollectionViewCell.m */; };
 		B39AE7422277DC6900CAB2FC /* SecondCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B39AE7402277DC6900CAB2FC /* SecondCollectionViewCell.xib */; };
 		B39AE7792277DF8600CAB2FC /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B39AE74B2277DF8500CAB2FC /* SDWebImageManager.m */; };
@@ -51,6 +47,7 @@
 		B39AE7902277DF8600CAB2FC /* UIView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B39AE7712277DF8600CAB2FC /* UIView+WebCache.m */; };
 		B39AE7912277DF8600CAB2FC /* SDWebImageImageIOCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = B39AE7732277DF8600CAB2FC /* SDWebImageImageIOCoder.m */; };
 		B39AE7922277DF8600CAB2FC /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B39AE7772277DF8600CAB2FC /* UIButton+WebCache.m */; };
+		B3A68DF322866816009250CC /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A68DF122866815009250CC /* NSString+Size.m */; };
 		B3B83F442272D2F800C90AAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B83F432272D2F800C90AAE /* AppDelegate.m */; };
 		B3B83F4A2272D2F900C90AAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3B83F482272D2F900C90AAE /* Main.storyboard */; };
 		B3B83F4C2272D30B00C90AAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3B83F4B2272D30B00C90AAE /* Assets.xcassets */; };
@@ -135,14 +132,6 @@
 		B366A07922803EC300F4B673 /* CollectionReusableHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionReusableHeaderView.h; sourceTree = "<group>"; };
 		B366A07A22803EC300F4B673 /* CollectionReusableHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionReusableHeaderView.m; sourceTree = "<group>"; };
 		B366A07B22803EC300F4B673 /* CollectionReusableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionReusableHeaderView.xib; sourceTree = "<group>"; };
-		B377067E2276910700846C11 /* TagListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagListView.h; sourceTree = "<group>"; };
-		B377067F2276910700846C11 /* TagListViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagListViewFlowLayout.m; sourceTree = "<group>"; };
-		B37706802276910700846C11 /* TagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagCell.m; sourceTree = "<group>"; };
-		B37706812276910700846C11 /* TagListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagListView.m; sourceTree = "<group>"; };
-		B37706822276910700846C11 /* TagListViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagListViewFlowLayout.h; sourceTree = "<group>"; };
-		B37706832276910700846C11 /* TagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagCell.h; sourceTree = "<group>"; };
-		B377068A2276960200846C11 /* NSString+Size.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Size.h"; sourceTree = "<group>"; };
-		B377068B2276960200846C11 /* NSString+Size.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Size.m"; sourceTree = "<group>"; };
 		B39AE73E2277DC6900CAB2FC /* SecondCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondCollectionViewCell.h; sourceTree = "<group>"; };
 		B39AE73F2277DC6900CAB2FC /* SecondCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondCollectionViewCell.m; sourceTree = "<group>"; };
 		B39AE7402277DC6900CAB2FC /* SecondCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -199,6 +188,8 @@
 		B39AE7762277DF8600CAB2FC /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MultiFormat.h"; sourceTree = "<group>"; };
 		B39AE7772277DF8600CAB2FC /* UIButton+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WebCache.m"; sourceTree = "<group>"; };
 		B39AE7782277DF8600CAB2FC /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
+		B3A68DF122866815009250CC /* NSString+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Size.m"; sourceTree = "<group>"; };
+		B3A68DF222866816009250CC /* NSString+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Size.h"; sourceTree = "<group>"; };
 		B3B83F3F2272D2F800C90AAE /* BaseCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3B83F422272D2F800C90AAE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B3B83F432272D2F800C90AAE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -335,23 +326,10 @@
 		B34A76ED227EEB06000608B8 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				B377068A2276960200846C11 /* NSString+Size.h */,
-				B377068B2276960200846C11 /* NSString+Size.m */,
+				B3A68DF222866816009250CC /* NSString+Size.h */,
+				B3A68DF122866815009250CC /* NSString+Size.m */,
 			);
 			path = Categories;
-			sourceTree = "<group>";
-		};
-		B377067D2276910700846C11 /* TagListView */ = {
-			isa = PBXGroup;
-			children = (
-				B377067E2276910700846C11 /* TagListView.h */,
-				B37706812276910700846C11 /* TagListView.m */,
-				B37706822276910700846C11 /* TagListViewFlowLayout.h */,
-				B377067F2276910700846C11 /* TagListViewFlowLayout.m */,
-				B37706832276910700846C11 /* TagCell.h */,
-				B37706802276910700846C11 /* TagCell.m */,
-			);
-			path = TagListView;
 			sourceTree = "<group>";
 		};
 		B39AE7432277DF8500CAB2FC /* SDWebImage */ = {
@@ -467,7 +445,6 @@
 				B366A07B22803EC300F4B673 /* CollectionReusableHeaderView.xib */,
 				B3B83F482272D2F900C90AAE /* Main.storyboard */,
 				B3B83F4B2272D30B00C90AAE /* Assets.xcassets */,
-				B377067D2276910700846C11 /* TagListView */,
 				B3B83FDC2272D39A00C90AAE /* Resources */,
 				B3B83F4D2272D30B00C90AAE /* LaunchScreen.storyboard */,
 				B3B83F502272D30B00C90AAE /* Info.plist */,
@@ -793,7 +770,6 @@
 				B39AE78B2277DF8600CAB2FC /* UIImageView+WebCache.m in Sources */,
 				B3B83FCC2272D37C00C90AAE /* NSBundle+MJRefresh.m in Sources */,
 				B39AE7882277DF8600CAB2FC /* SDWebImageDownloaderOperation.m in Sources */,
-				B37706842276910700846C11 /* TagListViewFlowLayout.m in Sources */,
 				B3B83FD92272D37C00C90AAE /* MJRefreshBackFooter.m in Sources */,
 				B3B83FC82272D37C00C90AAE /* MJChiBaoZiHeader.m in Sources */,
 				B3B83FD02272D37C00C90AAE /* MJRefreshBackNormalFooter.m in Sources */,
@@ -802,11 +778,11 @@
 				B39AE78E2277DF8600CAB2FC /* SDImageCacheConfig.m in Sources */,
 				B3B83FCB2272D37C00C90AAE /* UIScrollView+MJExtension.m in Sources */,
 				B34A7707227EF5F8000608B8 /* HorizontalScrambledViewController.m in Sources */,
-				B37706862276910700846C11 /* TagListView.m in Sources */,
 				B39AE7852277DF8600CAB2FC /* NSButton+WebCache.m in Sources */,
 				B366A075228008DA00F4B673 /* HorizontalOrderViewController.m in Sources */,
 				B3B83FD22272D37C00C90AAE /* MJRefreshAutoGifFooter.m in Sources */,
 				B39AE78A2277DF8600CAB2FC /* NSData+ImageContentType.m in Sources */,
+				B3A68DF322866816009250CC /* NSString+Size.m in Sources */,
 				B39AE7902277DF8600CAB2FC /* UIView+WebCache.m in Sources */,
 				B39AE7912277DF8600CAB2FC /* SDWebImageImageIOCoder.m in Sources */,
 				B3B83FD12272D37C00C90AAE /* MJRefreshAutoStateFooter.m in Sources */,
@@ -834,7 +810,6 @@
 				B39AE7822277DF8600CAB2FC /* SDWebImageCompat.m in Sources */,
 				B39AE78C2277DF8600CAB2FC /* NSImage+WebCache.m in Sources */,
 				B39AE7832277DF8600CAB2FC /* SDWebImagePrefetcher.m in Sources */,
-				B377068C2276960200846C11 /* NSString+Size.m in Sources */,
 				B3B83FC52272D37C00C90AAE /* MJDIYAutoFooter.m in Sources */,
 				B39AE77C2277DF8600CAB2FC /* UIImage+ForceDecode.m in Sources */,
 				B3B83FF92272DA5000C90AAE /* FirstCollectionViewCell.m in Sources */,
@@ -846,7 +821,6 @@
 				B3B83FCD2272D37C00C90AAE /* UIView+MJExtension.m in Sources */,
 				B3B83FD72272D37C00C90AAE /* MJRefreshFooter.m in Sources */,
 				B3B83FD52272D37C00C90AAE /* MJRefreshStateHeader.m in Sources */,
-				B37706852276910700846C11 /* TagCell.m in Sources */,
 				B3B83FC12272D37C00C90AAE /* LYEmptyView.m in Sources */,
 				B3B83FD82272D37C00C90AAE /* MJRefreshHeader.m in Sources */,
 				B3B83FD62272D37C00C90AAE /* MJRefreshGifHeader.m in Sources */,

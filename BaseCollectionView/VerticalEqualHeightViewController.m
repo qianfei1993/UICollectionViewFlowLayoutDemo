@@ -13,6 +13,7 @@
 @property (nonatomic, strong) BaseCollectionView *collectionView;
 @property (nonatomic, strong) NSMutableArray *dataArray; /** 数据源 */
 @property (nonatomic, assign) NSInteger sectionNum; /** 分组 */
+@property (nonatomic, strong) UILabel *testLabel; /** <#注释#> */
 @end
 
 @implementation VerticalEqualHeightViewController
@@ -76,14 +77,19 @@
     
     FirstCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"FirstCollectionViewCellID" forIndexPath:indexPath];
     cell.contentView.backgroundColor = kRandomColor;
+//    cell.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
+//    [cell.titleLabel sizeToFit];
     cell.titleLabel.text = [NSString stringWithFormat:@"%ld--%@",indexPath.item,self.dataArray[indexPath.item]];
     return cell;
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     NSString *str = self.dataArray[indexPath.item];
-    CGSize size = [str sizeForFont:[UIFont systemFontOfSize:15] size:CGSizeMake(kScreenWidth-30, 100) mode:NSLineBreakByWordWrapping];
-    return CGSizeMake(size.width + 50, size.height + 16);
+    //CGSize size = [str sizeForFont:[UIFont systemFontOfSize:15] size:CGSizeMake(self.collectionView.frame.size.width-30-50, 100) mode:NSLineBreakByWordWrapping];
+    CGSize size = [self textContentSize:str];
+//    CGSize size = [self stringSize:str];
+//    CGSize size = [str sizeWithFont:[UIFont systemFontOfSize:15] constrainedToWidth:self.collectionView.frame.size.width-80];
+    return CGSizeMake(size.width, size.height+16);
 }
 
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
@@ -123,14 +129,26 @@
     return CGSizeMake(kScreenWidth, 44);
 }
 
-
 - (NSMutableArray*)dataArray{
     if (!_dataArray) {
-        _dataArray = [NSMutableArray arrayWithObjects:@"御神风", @"悟剑声", @"任云踪",@"白衣剑少", @"靖沧浪", @"擎海潮",@"南风不竞", @"寒烟翠", @"玄真君", @"太虚子", @"花非花", @"织梦师", @"地冥", @"人觉", @"天际", @"无神论", @"非常君", @"玉逍遥", @"一页书", @"脱俗仙子谈无欲", @"清香白莲素还真", @"任平生", @"映红雪", @"应无骞", @"剑颠命夫子", @"法儒", @"君奉天", @"离凡", @"剑随风", @"乱世狂刀", @"疏雨孟尝", @"风采铃", @"剑君十二恨", @"秦假仙", @"鷇音子", @"柳生剑影", @"最光阴", @"佛剑分说", @"傲笑红尘", @"弃天帝", @"慕少艾", @"莫召奴", @"凝渊", @"剑子仙迹", @"青阳子", nil];
+        _dataArray = [NSMutableArray arrayWithObjects:@"御神风御神风御神风御神风御神风御神风御神风御神风御神风御神风御神风御神风御神风御神风御神风", @"悟剑声", @"任云踪",@"白衣剑少", @"靖沧浪", @"擎海潮",@"南风不竞", @"寒烟翠", @"玄真君", @"太虚子", @"花非花", @"织梦师", @"地冥", @"人觉", @"天际", @"无神论", @"非常君", @"玉逍遥", @"一页书", @"脱俗仙子谈无欲", @"清香白莲素还真", @"任平生", @"映红雪", @"应无骞", @"剑颠命夫子", @"法儒", @"君奉天", @"离凡", @"剑随风", @"乱世狂刀乱世狂刀乱世狂刀乱世狂刀乱世狂刀乱世狂刀乱世狂刀乱世狂刀乱世狂刀乱世狂刀", @"疏雨孟尝", @"风采铃", @"剑君十二恨", @"秦假仙", @"鷇音子", @"柳生剑影", @"最光阴", @"佛剑分说", @"傲笑红尘", @"弃天帝", @"慕少艾", @"莫召奴", @"凝渊", @"剑子仙迹", @"青阳子", nil];
     }
     return _dataArray;
 }
+- (UILabel *)testLabel {
+    if (!_testLabel) {
+        _testLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+    }
+    return _testLabel;
+}
 
+- (CGSize)textContentSize:(NSString *)text {
+    self.testLabel.font = [UIFont systemFontOfSize:15];
+    self.testLabel.text = text;
+    [self.testLabel sizeToFit];
+    CGFloat labelWidth = MIN(self.collectionView.frame.size.width - 80, ceil(self.testLabel.frame.size.width));
+    return CGSizeMake(labelWidth+50, ceil(self.testLabel.frame.size.height) );
+}
 /*
 #pragma mark - Navigation
 

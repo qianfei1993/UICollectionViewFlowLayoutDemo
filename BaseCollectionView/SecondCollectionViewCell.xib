@@ -22,8 +22,8 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qGP-FE-Dza">
                         <rect key="frame" x="0.0" y="0.0" width="172" height="161"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iep-w7-NrD">
-                        <rect key="frame" x="86" y="80.5" width="0.0" height="0.0"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iep-w7-NrD">
+                        <rect key="frame" x="0.0" y="0.0" width="172" height="161"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -31,11 +31,13 @@
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="Iep-w7-NrD" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="FJC-hI-3jl"/>
+                <constraint firstItem="Iep-w7-NrD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ICu-6l-h4f"/>
                 <constraint firstItem="qGP-FE-Dza" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="R5l-c8-zl5"/>
                 <constraint firstAttribute="trailing" secondItem="qGP-FE-Dza" secondAttribute="trailing" id="Uz1-PN-00Y"/>
+                <constraint firstAttribute="bottom" secondItem="Iep-w7-NrD" secondAttribute="bottom" id="aAz-jv-wm5"/>
                 <constraint firstAttribute="bottom" secondItem="qGP-FE-Dza" secondAttribute="bottom" id="fcK-ek-39z"/>
-                <constraint firstItem="Iep-w7-NrD" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="mEF-AI-jvA"/>
+                <constraint firstAttribute="trailing" secondItem="Iep-w7-NrD" secondAttribute="trailing" id="hzZ-3S-JWv"/>
+                <constraint firstItem="Iep-w7-NrD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vRq-46-GAR"/>
                 <constraint firstItem="qGP-FE-Dza" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ztN-wD-SEA"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>

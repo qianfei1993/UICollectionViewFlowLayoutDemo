@@ -11,11 +11,11 @@
 NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSInteger, FlowLayoutType) {
-    FlowLayoutTypeNormal,              // 正常布局
-    FlowLayoutTypeVerticalEqualWidth,  // 垂直瀑布流--Item等宽不等高
-    FlowLayoutTypeVerticalEqualHeight, // 垂直瀑布流--Item等高不等宽
-    FlowLayoutTypeHorizontalScrambled, // 水平瀑布流--补充最短行排列
-    FlowLayoutTypeHorizontalOrder,     // 水平瀑布流--顺序排列
+    FlowLayoutTypeNormal,                   // 正常布局
+    FlowLayoutTypeVerticalEqualWidth,       // 垂直瀑布流--Item等宽不等高
+    FlowLayoutTypeVerticalEqualHeight,      // 垂直瀑布流--Item等高不等宽
+    FlowLayoutTypeHorizontalScrambled,      // 水平瀑布流--Item等高不等宽-补充最短行排列
+    FlowLayoutTypeHorizontalOrder,          // 水平瀑布流--Item等高不等宽-顺序排列
 };
 
 @protocol BaseCollectionViewFlowLayoutDelegate <UICollectionViewDelegate>
@@ -46,7 +46,6 @@ typedef NS_ENUM(NSInteger, FlowLayoutType) {
 
  @return BaseCollectionViewFlowLayout       布局对象
  */
-
 - (instancetype)initWithFlowLayoutType:(FlowLayoutType)type withColumnOrRowCount:(NSUInteger)columnOrRowCount withColumnSpacing:(CGFloat)columnSpacing withRowSpacing:(CGFloat)rowSpacing withEdgeInsets:(UIEdgeInsets)edgeInsets;
 
 @end

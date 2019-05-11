@@ -136,7 +136,7 @@
         if (self.page > 0) {
             NSMutableArray *mulArr = [NSMutableArray array];
             for (int i = 0; i < 5; i++) {
-                NSString *str = [NSString stringWithFormat:@"新增数据%ld",(long)self.page];
+                NSString *str = [NSString stringWithFormat:@"新增数据"];
                 [mulArr addObject:str];
             }
             [self.collectionView.dataArray addObject:mulArr.copy];

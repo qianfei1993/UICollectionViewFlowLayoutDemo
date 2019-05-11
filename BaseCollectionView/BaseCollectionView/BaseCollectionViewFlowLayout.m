@@ -466,7 +466,7 @@
     // 创建布局属性
     UICollectionViewLayoutAttributes *newAttributes = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
     // collectionView的宽度
-    CGFloat collectionViewWidth = self.collectionView.frame.size.width - sectionInset.left - sectionInset.right;
+    CGFloat collectionViewWidth = self.collectionView.frame.size.width - sectionInset.right;
     CGFloat itemWidth = oldAttributes.size.width;
     CGFloat itemHeight = oldAttributes.size.height;
     
