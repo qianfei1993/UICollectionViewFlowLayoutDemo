@@ -26,7 +26,6 @@
     
     TypeNormalFlowLayout *flowLayout = [[TypeNormalFlowLayout alloc]initWithColumnOrRowCount:0 withColumnSpacing:10 withRowSpacing:10 withEdgeInsets:UIEdgeInsetsMake(20, 15, 20, 15)];
     
-//    ZJReorderFlowLayout *flowLayout = [[ZJReorderFlowLayout alloc] init];
     flowLayout.sectionInset = UIEdgeInsetsMake(20, 15, 20, 15);
     
     flowLayout.itemSize = CGSizeMake((kScreenWidth - 50)/3, 100);

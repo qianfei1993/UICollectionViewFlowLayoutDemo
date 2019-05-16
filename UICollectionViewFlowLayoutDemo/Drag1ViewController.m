@@ -28,7 +28,6 @@
 - (void)setupWithCollectionView{
     
     TypeNormalFlowLayout *flowLayout = [[TypeNormalFlowLayout alloc]initWithColumnOrRowCount:0 withColumnSpacing:10 withRowSpacing:10 withEdgeInsets:UIEdgeInsetsMake(20, 15, 20, 15)];
-//    flowLayout.sectionInset = UIEdgeInsetsMake(20, 15, 20, 15);
     flowLayout.itemSize = CGSizeMake((kScreenWidth - 50)/3, 100);
     self.collectionView = [[BaseCollectionView alloc]initWithFrame:CGRectMake(0, kNavBarHeight, kScreenWidth, kScreenHeight-kNavBarHeight) collectionViewLayout:flowLayout];
     [self.view addSubview:self.collectionView];
@@ -160,21 +159,6 @@
     }
     
 }
-
-
-/*
- #pragma mark - ZJReorderCollectionViewDataSource methods
- - (void)collectionView:(UICollectionView *)collectionView itemAtIndexPath:(NSIndexPath *)fromIndexPath willMoveToIndexPath:(NSIndexPath *)toIndexPath {
- NSDictionary *dict = self.dataArray[fromIndexPath.item];
- [self.dataArray removeObjectAtIndex:fromIndexPath.item];
- [self.dataArray insertObject:dict atIndex:toIndexPath.item];
- }
- 
- - (BOOL)collectionView:(UICollectionView *)collectionView itemAtIndexPath:(NSIndexPath *)fromIndexPath canMoveToIndexPath:(NSIndexPath *)toIndexPath
- {
- return YES;
- }
- */
 
 - (NSMutableArray*)dataArray{
     if (!_dataArray) {

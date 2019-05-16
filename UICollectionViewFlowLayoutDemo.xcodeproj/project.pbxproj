@@ -104,6 +104,7 @@
 		B3552FD4228BBF1F0074F220 /* TestFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B3552FD3228BBF1F0074F220 /* TestFlowLayout.m */; };
 		B3552FD7228BFECF0074F220 /* DragViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3552FD6228BFECF0074F220 /* DragViewController.m */; };
 		B37A7B57228CF44E001A77B4 /* Drag1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B37A7B56228CF44E001A77B4 /* Drag1ViewController.m */; };
+		B37A7B59228CF9EB001A77B4 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = B37A7B58228CF9EB001A77B4 /* 1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -314,6 +315,7 @@
 		B3552FD6228BFECF0074F220 /* DragViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DragViewController.m; sourceTree = "<group>"; };
 		B37A7B55228CF44E001A77B4 /* Drag1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Drag1ViewController.h; sourceTree = "<group>"; };
 		B37A7B56228CF44E001A77B4 /* Drag1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Drag1ViewController.m; sourceTree = "<group>"; };
+		B37A7B58228CF9EB001A77B4 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -685,6 +687,7 @@
 				B34D7F1C228931C500775AF5 /* shop.plist */,
 				B34D7F1D228931C500775AF5 /* noNetwork@2x.png */,
 				B34D7F1E228931C500775AF5 /* nodata@2x.png */,
+				B37A7B58228CF9EB001A77B4 /* 1.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -801,6 +804,7 @@
 				B34D7E1122891B7500775AF5 /* Assets.xcassets in Resources */,
 				B34D7F1F228931C500775AF5 /* shop.plist in Resources */,
 				B34D7F0A22892FDC00775AF5 /* NormalTypeViewController.xib in Resources */,
+				B37A7B59228CF9EB001A77B4 /* 1.png in Resources */,
 				B34D7EC722891C2B00775AF5 /* MJRefresh.bundle in Resources */,
 				B34D7E0F22891B6400775AF5 /* Main.storyboard in Resources */,
 			);
