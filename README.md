@@ -1,6 +1,13 @@
 # UICollectionViewFlowLayoutDemo
 ## 效果图
 ![](https://github.com/qianfei1993/UICollectionViewFlowLayoutDemo/blob/master/UICollectionViewFlowLayoutDemo/Resources/1.png)
+![](https://github.com/qianfei1993/UICollectionViewFlowLayoutDemo/blob/master/UICollectionViewFlowLayoutDemo/Resources/2.png)
+![](https://github.com/qianfei1993/UICollectionViewFlowLayoutDemo/blob/master/UICollectionViewFlowLayoutDemo/Resources/3.png)
+![](https://github.com/qianfei1993/UICollectionViewFlowLayoutDemo/blob/master/UICollectionViewFlowLayoutDemo/Resources/4.png)
+![](https://github.com/qianfei1993/UICollectionViewFlowLayoutDemo/blob/master/UICollectionViewFlowLayoutDemo/Resources/5.png)
+![](https://github.com/qianfei1993/UICollectionViewFlowLayoutDemo/blob/master/UICollectionViewFlowLayoutDemo/Resources/6.png)
+![](https://github.com/qianfei1993/UICollectionViewFlowLayoutDemo/blob/master/UICollectionViewFlowLayoutDemo/Resources/7.png)
+![](https://github.com/qianfei1993/UICollectionViewFlowLayoutDemo/blob/master/UICollectionViewFlowLayoutDemo/Resources/8.png)
 
 ## 介绍&使用
 #### UICollectionViewFlowLayoutDemo,封装的UICollectionView与UICollectionViewFlowLayout基类，集成下拉刷新，上拉加载，无数据页面，自定义布局属性，支持垂直瀑布流分组，配置公共项，但是并没有将delegate与dataSource独立出来，依赖MJRefresh与LYEmptyView第三方框架；
